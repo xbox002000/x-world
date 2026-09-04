@@ -1,7 +1,7 @@
 "use client";
 
 import type { NextMove, Quest } from "@/lib/domain/types";
-import { useI18n } from "@/lib/i18n";
+import { useI18n, localizeMove, localizeQuest } from "@/lib/i18n";
 
 export function MovesPanel({
   moves,
@@ -14,8 +14,8 @@ export function MovesPanel({
   onDoIt: (moveId: string) => void;
   busyId: string | null;
 }) {
-  const { t } = useI18n();
-  const visible = moves.slice(0, 3);
+  const { t, locale } = useI18n();
+  const visible = moves.slice(0, 3).map((m) => localizeMove(m, locale));
 
   return (
     <div className="panel-glass rounded-2xl p-4">
@@ -27,7 +27,8 @@ export function MovesPanel({
       ) : (
         <ul className="space-y-2">
           {visible.map((m) => {
-            const quest = quests.find((q) => q.id === m.questId);
+            const questRaw = quests.find((q) => q.id === m.questId);
+            const quest = questRaw ? localizeQuest(questRaw, locale) : undefined;
             const done = quest?.status === "completed";
             return (
               <li
