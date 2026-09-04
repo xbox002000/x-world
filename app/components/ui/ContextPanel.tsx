@@ -1,7 +1,13 @@
 "use client";
 
 import type { Entity, NextMove, Opportunity, Post, WorldState } from "@/lib/domain/types";
-import { useI18n } from "@/lib/i18n";
+import {
+  useI18n,
+  localizeEntity,
+  localizeMove,
+  localizeOpp,
+  localizePost,
+} from "@/lib/i18n";
 
 export function ContextPanel({
   entity,
@@ -16,23 +22,29 @@ export function ContextPanel({
   onDoMove: (moveId: string) => void;
   busy: boolean;
 }) {
-  const { t } = useI18n();
+  const { t, locale } = useI18n();
   if (!entity) return null;
 
-  const post: Post | undefined = world.posts.find((p) => p.entityId === entity.id);
-  const opp: Opportunity | undefined = world.opportunities.find(
+  const localized = localizeEntity(entity, locale);
+  const postRaw: Post | undefined = world.posts.find((p) => p.entityId === entity.id);
+  const post = postRaw ? localizePost(postRaw, locale) : undefined;
+  const oppRaw: Opportunity | undefined = world.opportunities.find(
     (o) => o.targetEntityId === entity.id
   );
-  const relatedMove: NextMove | undefined =
+  const opp = oppRaw ? localizeOpp(oppRaw, locale) : undefined;
+  const relatedMoveRaw: NextMove | undefined =
     world.nextMoves.find((m) => m.targetEntityId === entity.id) ??
     (entity.entityType === "person"
       ? world.nextMoves.find((m) => m.action === "DISCOVER")
       : undefined);
+  const relatedMove = relatedMoveRaw
+    ? localizeMove(relatedMoveRaw, locale)
+    : undefined;
 
   const why =
     opp?.why ??
     relatedMove?.why ??
-    entity.summary ??
+    localized.summary ??
     t("context.whyFallback");
 
   const nextLabel =
@@ -55,7 +67,7 @@ export function ContextPanel({
           <p className="text-[10px] uppercase tracking-[0.25em] text-mist">
             {typeLabel}
           </p>
-          <h2 className="font-display text-xl text-frost">{entity.title}</h2>
+          <h2 className="font-display text-xl text-frost">{localized.title}</h2>
           {entity.handle && (
             <p className="text-xs text-mist">@{entity.handle}</p>
           )}
@@ -75,8 +87,8 @@ export function ContextPanel({
         </p>
       )}
 
-      {!post && entity.summary && (
-        <p className="mb-3 text-sm leading-relaxed text-mist">{entity.summary}</p>
+      {!post && localized.summary && (
+        <p className="mb-3 text-sm leading-relaxed text-mist">{localized.summary}</p>
       )}
 
       <div className="mb-4">
