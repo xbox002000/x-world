@@ -1,0 +1,228 @@
+{
+  "version": 1,
+  "generated_at": "2026-09-04T03:30:00Z",
+  "demo_user": {
+    "id": "user_you",
+    "display_name": "YOU",
+    "x_user_id": "x_1000",
+    "username": "you_builder",
+    "bio": "Building in public. Learning distribution."
+  },
+  "entities": [
+    {
+      "id": "person_you",
+      "entity_type": "person",
+      "external_id": "x_1000",
+      "handle": "you_builder",
+      "title": "YOU",
+      "summary": "Ego node — Interactive X Growth World center",
+      "tier": "A"
+    },
+    {
+      "id": "person_nova",
+      "entity_type": "person",
+      "external_id": "x_2001",
+      "handle": "nova_builds",
+      "title": "Nova Park",
+      "summary": "AI agents tinkerer; posts shipping logs",
+      "tier": "B"
+    },
+    {
+      "id": "person_rio",
+      "entity_type": "person",
+      "external_id": "x_2002",
+      "handle": "rio_saas",
+      "title": "Rio Chen",
+      "summary": "B2B SaaS pricing & packaging",
+      "tier": "B"
+    },
+    {
+      "id": "person_mira",
+      "entity_type": "person",
+      "external_id": "x_2003",
+      "handle": "mira_loops",
+      "title": "Mira Okonkwo",
+      "summary": "Creator ops; habit systems for writers",
+      "tier": "B"
+    },
+    {
+      "id": "person_jax",
+      "entity_type": "person",
+      "external_id": "x_2004",
+      "handle": "jax_graphs",
+      "title": "Jax Nguyen",
+      "summary": "Visualization engineer; force layouts",
+      "tier": "C"
+    },
+    {
+      "id": "person_eli",
+      "entity_type": "person",
+      "external_id": "x_2005",
+      "handle": "eli_policy",
+      "title": "Eli Romero",
+      "summary": "Platform policy & trust nerd",
+      "tier": "C"
+    },
+    {
+      "id": "topic_ai_agents",
+      "entity_type": "topic",
+      "external_id": "topic_ai_agents",
+      "handle": null,
+      "title": "AI Agents",
+      "summary": "Autonomous / semi-autonomous agent workflows",
+      "tier": "A"
+    },
+    {
+      "id": "topic_saas_pricing",
+      "entity_type": "topic",
+      "external_id": "topic_saas_pricing",
+      "handle": null,
+      "title": "SaaS Pricing",
+      "summary": "Packaging, seats, usage-based debates",
+      "tier": "B"
+    },
+    {
+      "id": "topic_creator_ops",
+      "entity_type": "topic",
+      "external_id": "topic_creator_ops",
+      "handle": null,
+      "title": "Creator Ops",
+      "summary": "Systems for consistent creative output",
+      "tier": "B"
+    },
+    {
+      "id": "community_operator_ring",
+      "entity_type": "community",
+      "external_id": "community_operator_ring",
+      "handle": null,
+      "title": "Operator Ring",
+      "summary": "Curated circle of operators building in public",
+      "tier": "B"
+    },
+    {
+      "id": "post_nova_1",
+      "entity_type": "post",
+      "external_id": "x_post_9001",
+      "handle": null,
+      "title": "What should an agent remember vs re-fetch?",
+      "summary": "Open question from Nova on memory design",
+      "tier": "A"
+    },
+    {
+      "id": "post_rio_1",
+      "entity_type": "post",
+      "external_id": "x_post_9002",
+      "handle": null,
+      "title": "Usage-based pricing without surprise bills",
+      "summary": "Rio thread starter on metering UX",
+      "tier": "B"
+    },
+    {
+      "id": "post_mira_1",
+      "entity_type": "post",
+      "external_id": "x_post_9003",
+      "handle": null,
+      "title": "Streaks fail when the next action is unclear",
+      "summary": "Mira on habit design",
+      "tier": "B"
+    },
+    {
+      "id": "post_jax_1",
+      "entity_type": "post",
+      "external_id": "x_post_9004",
+      "handle": null,
+      "title": "Lazy expansion beats boiling the ocean graph",
+      "summary": "Jax on graph UX",
+      "tier": "C"
+    },
+    {
+      "id": "post_you_1",
+      "entity_type": "post",
+      "external_id": "x_post_9005",
+      "handle": null,
+      "title": "Building an Interactive Growth World — week 1",
+      "summary": "YOU building in public",
+      "tier": "A"
+    }
+  ],
+  "posts": [
+    {
+      "entity_id": "post_nova_1",
+      "author_entity_id": "person_nova",
+      "text": "Shipping agent memory today. Honest question: what should an agent remember vs re-fetch every run?",
+      "posted_at": "2026-09-04T01:10:00Z",
+      "metrics": { "likes": 42, "replies": 11, "reposts": 3 }
+    },
+    {
+      "entity_id": "post_rio_1",
+      "author_entity_id": "person_rio",
+      "text": "Usage-based can feel fair until the first surprise bill. How are you explaining meters in-product?",
+      "posted_at": "2026-09-03T15:40:00Z",
+      "metrics": { "likes": 67, "replies": 19, "reposts": 8 }
+    },
+    {
+      "entity_id": "post_mira_1",
+      "author_entity_id": "person_mira",
+      "text": "Streaks fail when the next action is unclear. Habit products need a next-best-action, not a flame icon.",
+      "posted_at": "2026-09-03T09:05:00Z",
+      "metrics": { "likes": 120, "replies": 24, "reposts": 15 }
+    },
+    {
+      "entity_id": "post_jax_1",
+      "author_entity_id": "person_jax",
+      "text": "If your social graph UX loads 50k nodes on day one, you do not have a product — you have a heater. Lazy expansion wins.",
+      "posted_at": "2026-09-02T20:20:00Z",
+      "metrics": { "likes": 88, "replies": 14, "reposts": 9 }
+    },
+    {
+      "entity_id": "post_you_1",
+      "author_entity_id": "person_you",
+      "text": "Week 1: sketching an Interactive X Growth World. Core output is Next Best Action — not another dashboard.",
+      "posted_at": "2026-09-01T12:00:00Z",
+      "metrics": { "likes": 30, "replies": 7, "reposts": 2 }
+    }
+  ],
+  "relationships": [
+    { "id": "e1", "from": "person_you", "to": "person_nova", "rel_type": "FOLLOW", "weight": 1.0, "source": "mock" },
+    { "id": "e2", "from": "person_nova", "to": "person_you", "rel_type": "FOLLOW", "weight": 1.0, "source": "mock" },
+    { "id": "e3", "from": "person_you", "to": "person_nova", "rel_type": "MUTUAL", "weight": 1.2, "source": "derived" },
+    { "id": "e4", "from": "person_you", "to": "person_rio", "rel_type": "FOLLOW", "weight": 0.8, "source": "mock" },
+    { "id": "e5", "from": "person_you", "to": "person_mira", "rel_type": "FOLLOW", "weight": 0.9, "source": "mock" },
+    { "id": "e6", "from": "person_you", "to": "person_jax", "rel_type": "TRACK", "weight": 0.7, "source": "user" },
+    { "id": "e7", "from": "person_you", "to": "topic_ai_agents", "rel_type": "INTERESTED_IN", "weight": 1.5, "source": "user" },
+    { "id": "e8", "from": "person_you", "to": "topic_saas_pricing", "rel_type": "INTERESTED_IN", "weight": 1.0, "source": "user" },
+    { "id": "e9", "from": "person_you", "to": "topic_creator_ops", "rel_type": "INTERESTED_IN", "weight": 0.9, "source": "user" },
+    { "id": "e10", "from": "person_nova", "to": "post_nova_1", "rel_type": "AUTHORED", "weight": 1.0, "source": "mock" },
+    { "id": "e11", "from": "person_rio", "to": "post_rio_1", "rel_type": "AUTHORED", "weight": 1.0, "source": "mock" },
+    { "id": "e12", "from": "person_mira", "to": "post_mira_1", "rel_type": "AUTHORED", "weight": 1.0, "source": "mock" },
+    { "id": "e13", "from": "person_jax", "to": "post_jax_1", "rel_type": "AUTHORED", "weight": 1.0, "source": "mock" },
+    { "id": "e14", "from": "person_you", "to": "post_you_1", "rel_type": "AUTHORED", "weight": 1.0, "source": "mock" },
+    { "id": "e15", "from": "post_nova_1", "to": "topic_ai_agents", "rel_type": "ABOUT", "weight": 1.4, "source": "mock" },
+    { "id": "e16", "from": "post_rio_1", "to": "topic_saas_pricing", "rel_type": "ABOUT", "weight": 1.3, "source": "mock" },
+    { "id": "e17", "from": "post_mira_1", "to": "topic_creator_ops", "rel_type": "ABOUT", "weight": 1.3, "source": "mock" },
+    { "id": "e18", "from": "post_jax_1", "to": "topic_ai_agents", "rel_type": "ABOUT", "weight": 0.6, "source": "mock" },
+    { "id": "e19", "from": "post_you_1", "to": "topic_creator_ops", "rel_type": "ABOUT", "weight": 0.8, "source": "mock" },
+    { "id": "e20", "from": "person_nova", "to": "topic_ai_agents", "rel_type": "INTERESTED_IN", "weight": 1.2, "source": "mock" },
+    { "id": "e21", "from": "person_rio", "to": "topic_saas_pricing", "rel_type": "INTERESTED_IN", "weight": 1.2, "source": "mock" },
+    { "id": "e22", "from": "person_mira", "to": "topic_creator_ops", "rel_type": "INTERESTED_IN", "weight": 1.2, "source": "mock" },
+    { "id": "e23", "from": "person_eli", "to": "community_operator_ring", "rel_type": "MEMBER_OF", "weight": 1.0, "source": "mock" },
+    { "id": "e24", "from": "person_mira", "to": "community_operator_ring", "rel_type": "MEMBER_OF", "weight": 1.0, "source": "mock" },
+    { "id": "e25", "from": "person_you", "to": "person_eli", "rel_type": "FOLLOW", "weight": 0.5, "source": "mock" }
+  ],
+  "subscriptions": [
+    { "entity_id": "topic_ai_agents", "sub_type": "subscribe_topic" },
+    { "entity_id": "person_jax", "sub_type": "track" }
+  ],
+  "seed_nba": {
+    "action": "REPLY",
+    "score": 82,
+    "target_entity_id": "post_nova_1",
+    "rationale": [
+      "MUTUAL with @nova_builds",
+      "Post is ABOUT your tracked topic AI Agents",
+      "Open question invites a thoughtful reply",
+      "Post is fresh (<6h in demo clock)"
+    ],
+    "draft": "Love this split. I am experimenting with remembering decisions + tool outcomes, and re-fetching raw docs each run so memory stays small."
+  }
+}
