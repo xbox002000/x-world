@@ -1,1 +1,387 @@
-PLACEHOLDER_DEMO
+{
+  "version": 1,
+  "generated_at": "2026-09-04T03:30:00Z",
+  "user": {
+    "id": "user_rock",
+    "displayName": "YOU Rock",
+    "handle": "you_rock",
+    "bio": "Building in public. Learning distribution.",
+    "followers": 147,
+    "level": 4,
+    "xp": 62,
+    "xpToNext": 220,
+    "xpThisWeek": 48,
+    "entityId": "person_you"
+  },
+  "entities": [
+    {
+      "id": "person_you",
+      "entityType": "person",
+      "externalId": "x_1000",
+      "handle": "you_rock",
+      "title": "YOU Rock",
+      "summary": "Ego node — Interactive X Growth World center",
+      "tier": "A",
+      "size": 2.4
+    },
+    {
+      "id": "person_alice",
+      "entityType": "person",
+      "externalId": "x_2001",
+      "handle": "alice_agents",
+      "title": "Alice",
+      "summary": "AI agents tinkerer; ships weekly demos",
+      "tier": "B",
+      "size": 1.35
+    },
+    {
+      "id": "person_bob",
+      "entityType": "person",
+      "externalId": "x_2002",
+      "handle": "bob_saas",
+      "title": "Bob",
+      "summary": "B2B SaaS pricing & packaging",
+      "tier": "B",
+      "size": 1.3
+    },
+    {
+      "id": "person_charlie",
+      "entityType": "person",
+      "externalId": "x_2003",
+      "handle": "charlie_auto",
+      "title": "Charlie",
+      "summary": "Automation systems for indie operators",
+      "tier": "B",
+      "size": 1.25
+    },
+    {
+      "id": "person_david",
+      "entityType": "person",
+      "externalId": "x_2004",
+      "handle": "david_indie",
+      "title": "David",
+      "summary": "Indie hacker; public MRR logs",
+      "tier": "C",
+      "size": 1.2
+    },
+    {
+      "id": "person_emma",
+      "entityType": "person",
+      "externalId": "x_2005",
+      "handle": "emma_loops",
+      "title": "Emma",
+      "summary": "Creator ops; habit systems for builders",
+      "tier": "C",
+      "size": 1.2
+    },
+    {
+      "id": "topic_ai_agents",
+      "entityType": "topic",
+      "externalId": "topic_ai_agents",
+      "handle": null,
+      "title": "AI Agents",
+      "summary": "Autonomous / semi-autonomous agent workflows",
+      "tier": "A",
+      "size": 1.1
+    },
+    {
+      "id": "topic_saas",
+      "entityType": "topic",
+      "externalId": "topic_saas",
+      "handle": null,
+      "title": "SaaS",
+      "summary": "Packaging, seats, usage-based debates",
+      "tier": "B",
+      "size": 1.0
+    },
+    {
+      "id": "topic_automation",
+      "entityType": "topic",
+      "externalId": "topic_automation",
+      "handle": null,
+      "title": "Automation",
+      "summary": "Workflows that remove repetitive work",
+      "tier": "B",
+      "size": 1.0
+    },
+    {
+      "id": "topic_indie_hacker",
+      "entityType": "topic",
+      "externalId": "topic_indie_hacker",
+      "handle": null,
+      "title": "Indie Hacker",
+      "summary": "Solo and small-team builders shipping products",
+      "tier": "B",
+      "size": 1.0
+    },
+    {
+      "id": "community_operator_ring",
+      "entityType": "community",
+      "externalId": "community_operator_ring",
+      "handle": null,
+      "title": "Operator Ring",
+      "summary": "Curated circle of operators building in public",
+      "tier": "B",
+      "size": 1.15
+    },
+    {
+      "id": "post_alice_1",
+      "entityType": "post",
+      "externalId": "x_post_9001",
+      "title": "What should an agent remember vs re-fetch?",
+      "summary": "Open question from Alice on memory design",
+      "tier": "A",
+      "size": 0.55
+    },
+    {
+      "id": "post_bob_1",
+      "entityType": "post",
+      "externalId": "x_post_9002",
+      "title": "Usage-based pricing without surprise bills",
+      "summary": "Bob thread on metering UX",
+      "tier": "B",
+      "size": 0.5
+    },
+    {
+      "id": "post_charlie_1",
+      "entityType": "post",
+      "externalId": "x_post_9003",
+      "title": "Automate the boring path, keep the judgment",
+      "summary": "Charlie on automation boundaries",
+      "tier": "B",
+      "size": 0.5
+    },
+    {
+      "id": "post_david_1",
+      "entityType": "post",
+      "externalId": "x_post_9004",
+      "title": "MRR week 12: quiet compounding",
+      "summary": "David indie log",
+      "tier": "C",
+      "size": 0.48
+    },
+    {
+      "id": "post_emma_1",
+      "entityType": "post",
+      "externalId": "x_post_9005",
+      "title": "Streaks fail when the next action is unclear",
+      "summary": "Emma on habit design",
+      "tier": "B",
+      "size": 0.5
+    },
+    {
+      "id": "post_you_1",
+      "entityType": "post",
+      "externalId": "x_post_9006",
+      "title": "Building an Interactive Growth World — week 1",
+      "summary": "YOU building in public",
+      "tier": "A",
+      "size": 0.52
+    },
+    {
+      "id": "post_alice_2",
+      "entityType": "post",
+      "externalId": "x_post_9007",
+      "title": "Agent evals that don't lie to you",
+      "summary": "Alice follow-up on evaluation",
+      "tier": "B",
+      "size": 0.48
+    },
+    {
+      "id": "post_bob_2",
+      "entityType": "post",
+      "externalId": "x_post_9008",
+      "title": "Seat vs usage: a decision tree",
+      "summary": "Bob packaging notes",
+      "tier": "C",
+      "size": 0.45
+    }
+  ],
+  "posts": [
+    {
+      "entityId": "post_alice_1",
+      "authorEntityId": "person_alice",
+      "text": "Shipping agent memory today. Honest question: what should an agent remember vs re-fetch every run?",
+      "postedAt": "2026-09-04T01:10:00Z",
+      "metrics": { "likes": 42, "replies": 11, "reposts": 3 }
+    },
+    {
+      "entityId": "post_bob_1",
+      "authorEntityId": "person_bob",
+      "text": "Usage-based can feel fair until the first surprise bill. How are you explaining meters in-product?",
+      "postedAt": "2026-09-03T15:40:00Z",
+      "metrics": { "likes": 67, "replies": 19, "reposts": 8 }
+    },
+    {
+      "entityId": "post_charlie_1",
+      "authorEntityId": "person_charlie",
+      "text": "Automate the boring path. Keep human judgment on the edges that change weekly.",
+      "postedAt": "2026-09-03T11:20:00Z",
+      "metrics": { "likes": 54, "replies": 9, "reposts": 6 }
+    },
+    {
+      "entityId": "post_david_1",
+      "authorEntityId": "person_david",
+      "text": "Week 12 MRR: +8%. No viral spike — just quiet compounding from one channel.",
+      "postedAt": "2026-09-02T20:20:00Z",
+      "metrics": { "likes": 88, "replies": 14, "reposts": 9 }
+    },
+    {
+      "entityId": "post_emma_1",
+      "authorEntityId": "person_emma",
+      "text": "Streaks fail when the next action is unclear. Habit products need a next-best-action, not a flame icon.",
+      "postedAt": "2026-09-03T09:05:00Z",
+      "metrics": { "likes": 120, "replies": 24, "reposts": 15 }
+    },
+    {
+      "entityId": "post_you_1",
+      "authorEntityId": "person_you",
+      "text": "Week 1: sketching an Interactive X Growth World. Core output is Next Best Action — not another dashboard.",
+      "postedAt": "2026-09-01T12:00:00Z",
+      "metrics": { "likes": 30, "replies": 7, "reposts": 2 }
+    },
+    {
+      "entityId": "post_alice_2",
+      "authorEntityId": "person_alice",
+      "text": "Agent evals that don't lie: measure task success, not vibes. Sharing a tiny rubric.",
+      "postedAt": "2026-09-04T02:00:00Z",
+      "metrics": { "likes": 35, "replies": 8, "reposts": 2 }
+    },
+    {
+      "entityId": "post_bob_2",
+      "authorEntityId": "person_bob",
+      "text": "Seat vs usage pricing — a short decision tree I use with founders.",
+      "postedAt": "2026-09-02T08:00:00Z",
+      "metrics": { "likes": 41, "replies": 6, "reposts": 4 }
+    }
+  ],
+  "relationships": [
+    { "id": "e1", "from": "person_you", "to": "person_alice", "relType": "FOLLOW", "weight": 1.0, "source": "mock" },
+    { "id": "e2", "from": "person_alice", "to": "person_you", "relType": "FOLLOW", "weight": 1.0, "source": "mock" },
+    { "id": "e3", "from": "person_you", "to": "person_alice", "relType": "MUTUAL", "weight": 1.2, "source": "derived" },
+    { "id": "e4", "from": "person_you", "to": "person_bob", "relType": "FOLLOW", "weight": 0.8, "source": "mock" },
+    { "id": "e5", "from": "person_you", "to": "person_charlie", "relType": "FOLLOW", "weight": 0.9, "source": "mock" },
+    { "id": "e6", "from": "person_you", "to": "person_david", "relType": "TRACK", "weight": 0.7, "source": "user" },
+    { "id": "e7", "from": "person_you", "to": "topic_ai_agents", "relType": "INTERESTED_IN", "weight": 1.5, "source": "user" },
+    { "id": "e8", "from": "person_you", "to": "topic_saas", "relType": "INTERESTED_IN", "weight": 1.0, "source": "user" },
+    { "id": "e9", "from": "person_you", "to": "topic_automation", "relType": "INTERESTED_IN", "weight": 0.9, "source": "user" },
+    { "id": "e10", "from": "person_you", "to": "topic_indie_hacker", "relType": "INTERESTED_IN", "weight": 0.85, "source": "user" },
+    { "id": "e11", "from": "person_alice", "to": "post_alice_1", "relType": "AUTHORED", "weight": 1.0, "source": "mock" },
+    { "id": "e12", "from": "person_bob", "to": "post_bob_1", "relType": "AUTHORED", "weight": 1.0, "source": "mock" },
+    { "id": "e13", "from": "person_charlie", "to": "post_charlie_1", "relType": "AUTHORED", "weight": 1.0, "source": "mock" },
+    { "id": "e14", "from": "person_david", "to": "post_david_1", "relType": "AUTHORED", "weight": 1.0, "source": "mock" },
+    { "id": "e15", "from": "person_emma", "to": "post_emma_1", "relType": "AUTHORED", "weight": 1.0, "source": "mock" },
+    { "id": "e16", "from": "person_you", "to": "post_you_1", "relType": "AUTHORED", "weight": 1.0, "source": "mock" },
+    { "id": "e17", "from": "person_alice", "to": "post_alice_2", "relType": "AUTHORED", "weight": 1.0, "source": "mock" },
+    { "id": "e18", "from": "person_bob", "to": "post_bob_2", "relType": "AUTHORED", "weight": 1.0, "source": "mock" },
+    { "id": "e19", "from": "post_alice_1", "to": "topic_ai_agents", "relType": "ABOUT", "weight": 1.4, "source": "mock" },
+    { "id": "e20", "from": "post_alice_2", "to": "topic_ai_agents", "relType": "ABOUT", "weight": 1.3, "source": "mock" },
+    { "id": "e21", "from": "post_bob_1", "to": "topic_saas", "relType": "ABOUT", "weight": 1.3, "source": "mock" },
+    { "id": "e22", "from": "post_bob_2", "to": "topic_saas", "relType": "ABOUT", "weight": 1.2, "source": "mock" },
+    { "id": "e23", "from": "post_charlie_1", "to": "topic_automation", "relType": "ABOUT", "weight": 1.4, "source": "mock" },
+    { "id": "e24", "from": "post_david_1", "to": "topic_indie_hacker", "relType": "ABOUT", "weight": 1.3, "source": "mock" },
+    { "id": "e25", "from": "post_emma_1", "to": "topic_indie_hacker", "relType": "ABOUT", "weight": 1.1, "source": "mock" },
+    { "id": "e26", "from": "post_you_1", "to": "topic_ai_agents", "relType": "ABOUT", "weight": 1.0, "source": "mock" },
+    { "id": "e27", "from": "person_alice", "to": "topic_ai_agents", "relType": "INTERESTED_IN", "weight": 1.5, "source": "mock" },
+    { "id": "e28", "from": "person_bob", "to": "topic_saas", "relType": "INTERESTED_IN", "weight": 1.4, "source": "mock" },
+    { "id": "e29", "from": "person_charlie", "to": "topic_automation", "relType": "INTERESTED_IN", "weight": 1.4, "source": "mock" },
+    { "id": "e30", "from": "person_david", "to": "topic_indie_hacker", "relType": "INTERESTED_IN", "weight": 1.5, "source": "mock" },
+    { "id": "e31", "from": "person_emma", "to": "topic_indie_hacker", "relType": "INTERESTED_IN", "weight": 1.2, "source": "mock" },
+    { "id": "e32", "from": "person_you", "to": "community_operator_ring", "relType": "TRACK", "weight": 0.6, "source": "user" },
+    { "id": "e33", "from": "person_alice", "to": "community_operator_ring", "relType": "MEMBER_OF", "weight": 1.0, "source": "mock" },
+    { "id": "e34", "from": "person_bob", "to": "community_operator_ring", "relType": "MEMBER_OF", "weight": 1.0, "source": "mock" },
+    { "id": "e35", "from": "person_charlie", "to": "person_alice", "relType": "FOLLOW", "weight": 0.7, "source": "mock" },
+    { "id": "e36", "from": "person_david", "to": "person_bob", "relType": "FOLLOW", "weight": 0.6, "source": "mock" },
+    { "id": "e37", "from": "person_emma", "to": "person_david", "relType": "FOLLOW", "weight": 0.8, "source": "mock" },
+    { "id": "e38", "from": "person_bob", "to": "person_charlie", "relType": "FOLLOW", "weight": 0.5, "source": "mock" }
+  ],
+  "opportunities": [
+    {
+      "id": "opp_reply_alice",
+      "title": "Reply to Alice's open question",
+      "rationale": ["Mutual follow", "Shared topic: AI Agents", "High reply surface"],
+      "score": 0.92,
+      "targetEntityId": "post_alice_1",
+      "nbaAction": "REPLY",
+      "why": "Alice asked a concrete design question in your core topic. A thoughtful reply deepens the mutual edge."
+    },
+    {
+      "id": "opp_topic_ai",
+      "title": "Explore rising topic: AI Agents",
+      "rationale": ["Your strongest interest", "Two recent posts", "Creator density"],
+      "score": 0.88,
+      "targetEntityId": "topic_ai_agents",
+      "nbaAction": "TRACK",
+      "why": "AI Agents is the densest halo in your world. Exploring it surfaces creators and conversations."
+    },
+    {
+      "id": "opp_discover_emma",
+      "title": "Discover Emma",
+      "rationale": ["Adjacent to Indie Hacker", "High-signal habit writing", "Not yet tracked"],
+      "score": 0.81,
+      "targetEntityId": "person_emma",
+      "nbaAction": "DISCOVER",
+      "why": "Emma bridges creator ops and indie building — a natural third discovery for today's quest."
+    },
+    {
+      "id": "opp_join_bob",
+      "title": "Join Bob's pricing thread",
+      "rationale": ["You follow Bob", "SaaS interest", "Active replies"],
+      "score": 0.76,
+      "targetEntityId": "post_bob_1",
+      "nbaAction": "REPLY",
+      "why": "Bob's metering question is open. One clear take beats lurking."
+    },
+    {
+      "id": "opp_community",
+      "title": "Join Operator Ring conversation",
+      "rationale": ["Tracked community", "Alice + Bob members", "Growth path"],
+      "score": 0.71,
+      "targetEntityId": "community_operator_ring",
+      "nbaAction": "SUBSCRIBE",
+      "why": "Operator Ring concentrates the people already in your graph. Subscribing tightens the cluster."
+    }
+  ],
+  "quests": [
+    {
+      "id": "quest_discover",
+      "questType": "discovery",
+      "title": "Discover 3 creators",
+      "description": "Mark three creators as discovered to expand your neighborhood.",
+      "targetEntityId": null,
+      "nbaAction": "DISCOVER",
+      "status": "suggested",
+      "score": 0.9,
+      "progress": 0,
+      "goal": 3,
+      "payload": { "rationale": ["Daily growth loop"] }
+    },
+    {
+      "id": "quest_topic",
+      "questType": "discovery",
+      "title": "Explore a rising topic",
+      "description": "Open and track AI Agents to deepen your topic halo.",
+      "targetEntityId": "topic_ai_agents",
+      "nbaAction": "TRACK",
+      "status": "suggested",
+      "score": 0.85,
+      "progress": 0,
+      "goal": 1,
+      "payload": { "rationale": ["Rising topic"] }
+    },
+    {
+      "id": "quest_reply",
+      "questType": "engagement",
+      "title": "Join one conversation",
+      "description": "Send one thoughtful mock reply to a high-signal post.",
+      "targetEntityId": "post_alice_1",
+      "nbaAction": "REPLY",
+      "status": "suggested",
+      "score": 0.92,
+      "progress": 0,
+      "goal": 1,
+      "payload": { "rationale": ["Mutual + open question"] }
+    }
+  ],
+  "discoveredCreatorIds": []
+}
