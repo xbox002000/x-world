@@ -5,7 +5,7 @@ import dynamic from "next/dynamic";
 import type { WorldState } from "@/lib/domain/types";
 import { track } from "@/lib/domain/events";
 import { getProvider } from "@/lib/providers";
-import { useI18n } from "@/lib/i18n";
+import { useI18n, localizeUser, localizeActionMessage } from "@/lib/i18n";
 import { GenerativeLoader } from "./GenerativeLoader";
 import { CinematicOverlay } from "./CinematicOverlay";
 import { GrowthStrip } from "@/components/ui/GrowthStrip";
@@ -20,7 +20,7 @@ const WorldCanvas = dynamic(
 );
 
 export function WorldExperience() {
-  const { t } = useI18n();
+  const { t, locale } = useI18n();
   const [loading, setLoading] = useState(true);
   const [progress, setProgress] = useState(0);
   const [world, setWorld] = useState<WorldState | null>(null);
@@ -76,13 +76,14 @@ export function WorldExperience() {
       }
       const result = await getProvider().applyNextMove(moveId);
       setWorld(result.world);
+      const msg = localizeActionMessage(result.message, locale);
       showToast(
         result.ok
           ? t("world.xpToast", {
-              message: result.message,
+              message: msg,
               xp: result.xpGained,
             })
-          : result.message
+          : msg
       );
       if (result.ok) {
         const m = result.world.nextMoves.find((x) => x.id === moveId);
@@ -117,7 +118,7 @@ export function WorldExperience() {
               </p>
               <p className="text-[11px] text-mist">
                 {t("world.followers", {
-                  name: world.user.displayName,
+                  name: localizeUser(world.user, locale).displayName,
                   count: world.user.followers,
                 })}
               </p>
@@ -173,7 +174,7 @@ export function WorldExperience() {
 
           <ShareCardModal
             open={shareOpen}
-            user={world.user}
+            user={localizeUser(world.user, locale)}
             edgeCount={world.relationships.length}
             onClose={() => setShareOpen(false)}
           />

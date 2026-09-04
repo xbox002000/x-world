@@ -61,8 +61,9 @@ Top-right **EN · 简体中文** / **中文 · EN** control on landing and world
 
 - Default: English
 - Persists in `localStorage` key `xworld.locale` (`en` | `zh-CN`)
-- Covers chrome/UI strings (landing, loader, context panel, moves, growth strip, share card, cinematic, buttons). Demo entity proper names stay English; ego label lightly localizes YOU → 你.
-- Implementation: `lib/i18n/` (`locales/en.ts`, `locales/zh-CN.ts`, `I18nProvider.tsx`, `useI18n()`)
+- **Chrome + demo content:** zh-CN covers UI chrome *and* mock demo content maps (entity titles/summaries, post text, nextMoves label/why, opportunities title/why/rationale, quests, toast messages). Localization happens at the UI layer from English ids — `MockProvider` / `demo-world.json` stay English.
+- Person display names (Alice/Bob/…) stay as proper nouns; ego title becomes `你 · Rock`. Topic/community titles are translated (e.g. AI Agents → AI 智能体). `@handles` stay Latin.
+- Implementation: `lib/i18n/` (`locales/en.ts`, `locales/zh-CN.ts`, `content/zh-CN-demo.ts`, `localizeContent.ts`, `I18nProvider.tsx`, `useI18n()`)
 
 ## Stack
 
